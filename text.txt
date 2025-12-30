@@ -1,0 +1,55 @@
+#ex1 td1
+exemple1 = """Une entreprise disposant de 10 000 m² de carton en réserve, fabrique et 
+    commercialise 2 types de boîtes en carton. La fabrication d'une boîte en 
+    carton de type 1 ou 2 requiert, respectivement, 1 et 2 m² de carton ainsi 
+    que 2 et 3 minutes de temps d'assemblage. Seules 200 heures de travail sont 
+    disponibles pendant la semaine à venir. Les boîtes sont agrafées et il faut 
+    quatre fois plus d'agrafes pour une boîte du second type que pour une du 
+    premier. Le stock d'agrafes disponible permet d'assembler au maximum 15 000 
+    boîtes du premier type. Les boîtes sont vendues, respectivement, 3 et 5 DH."""
+
+#ex1 DS1
+exemple2 = """L'entreprise RadarIn fabrique deux types de détecteurs, notés A et B. La production de chaque détecteur nécessite la collaboration de trois spécialistes : Amine, Sara et Youssef.
+
+Les disponibilités hebdomadaires maximales de ces spécialistes sont respec-tivement de 20 heures pour Anine, 30 heures pour Sara et 15 heures pour
+
+Youssef.
+
+Pour fabriquer un détecteur de type A, il faut 60 minutes de travail d'Amine, 120 minutes de Sara et 60 minutes de Youssef. Pour un détecteur de type B, il faut 120 minutes de travail d'Amine, 60 minutes de Sara et 180 minutes de Youssef.
+
+Le prix de vente d'un détecteur A est de 2000 dirhams, tandis que celui d'un détecteur B est de 1500 dirhams.
+
+On suppose que l'entreprise peut vendre toute sa production sans limitation de la demande."""
+
+exemple3 = """Une brique A nécessite 4 kg d’argile et 3 minutes.
+
+Une brique B nécessite 5 kg d’argile et 5 minutes.
+
+La réserve d’argile est de 25 000 kg.
+
+Au maximum 600 heures de travail sont disponibles.
+
+La machine de cuisson permet de traiter au plus 7 000 briques A.
+
+Les bénéfices sont 2 DH par A et 4 DH par B."""
+
+
+exemple4 = """Une usine dispose de 8 000 kg d’acier pour fabriquer deux modèles de pièces
+métalliques. Une pièce du modèle 1 demande 2 kg d’acier et 4 minutes de
+façonnage, alors qu’une pièce du modèle 2 nécessite 3 kg d’acier et 6 minutes.
+La machine de façonnage peut fonctionner pendant 250 heures cette semaine.
+Le traitement thermique exige trois fois plus d’énergie pour une pièce du
+modèle 2 que pour une du modèle 1. L’énergie disponible permet le traitement
+de 10 000 pièces du modèle 1 au maximum. Les pièces sont vendues 20 DH pour
+le modèle 1 et 32 DH pour le modèle 2."""
+
+
+exemple5 = """Une société produit deux types de biscuits en utilisant une réserve de 
+18 000 kg de farine. La fabrication d’un biscuit du type X nécessite 1.5 kg
+de farine et 2 minutes de cuisson, tandis que celle d’un biscuit du type Y 
+requiert 2.5 kg de farine et 3 minutes. Le four peut fonctionner pendant 
+180 heures au total. Le glaçage utilisé pour les biscuits Y est trois fois 
+plus important que celui utilisé pour les biscuits X, et la réserve actuelle 
+de glaçage permet de fabriquer au maximum 9 000 biscuits du type X. Les 
+biscuits X et Y sont vendus respectivement 2 DH et 3.5 DH l’unité.
+"""
