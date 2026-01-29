@@ -8,7 +8,7 @@ Application de bureau moderne pour résoudre des problèmes de programmation lin
 
 ##  Table des matières
 
-- [Caractéristiques](#-caractéristiques)
+- [Caractéristiques](##-caractéristiques)
 - [Installation](#-installation)
 - [Configuration](#-configuration)
 - [Utilisation](#-utilisation)
@@ -56,17 +56,6 @@ Application de bureau moderne pour résoudre des problèmes de programmation lin
 - Python 3.8 ou supérieur
 - pip (gestionnaire de paquets Python)
 
-### Installation des dépendances
-
-```bash
-# Cloner le repository
-git clone https://github.com/votre-username/solveur-pl.git
-cd solveur-pl
-
-# Installer les dépendances
-pip install -r requirements.txt
-```
-
 ### Dépendances principales
 
 ```
@@ -104,8 +93,6 @@ GEMINI_API_KEY=votre_clé_api_ici
 2. Connectez-vous avec votre compte Google
 3. Créez une nouvelle clé API
 4. Copiez la clé (format : `AIzaSy...`)
-
->  **Gratuit** : 15 requêtes/minute, 1500 requêtes/jour
 
 ##  Utilisation
 
@@ -151,8 +138,9 @@ disponibles pendant la semaine à venir...
 PROJET-1/
 ├── main.py                     # Point d'entrée de l'application
 ├── requirements.txt            # Dépendances Python
-├── .env                        # Configuration API (à créer)
 ├── README.md                   # Ce fichier
+├── pdf_export.py               # Export PDF
+├── test_models.py              # tester les models 
 │
 ├── core/                       # Logique métier
 │   ├── optimizer.py           # Algorithmes d'optimisation
@@ -165,8 +153,7 @@ PROJET-1/
 │   └── main_window.py         # Fenêtre principale
 │
 └── utils/                     # Utilitaires
-    ├── validators.py          # Validation des entrées
-    └── pdf_export.py          # Export PDF
+    └── validators.py          # Validation des entrées
 ```
 
 ##  Technologies
@@ -218,19 +205,9 @@ Pour B : 1h et 2kg. On dispose de 100h et 120kg.
 - 2x₁ + x₂ ≤ 100
 - 3x₁ + 2x₂ ≤ 120
 
-##  Contributions
-
-Les contributions sont les bienvenues ! 
-
-1. Forkez le projet
-2. Créez une branche (`git checkout -b feature/amelioration`)
-3. Committez vos changements (`git commit -m 'Ajout fonctionnalité'`)
-4. Poussez vers la branche (`git push origin feature/amelioration`)
-5. Ouvrez une Pull Request
-
 ##  Signaler un bug
 
-Ouvrez une [issue](https://github.com/votre-username/solveur-pl/issues) avec :
+Ouvrez une [issue](https://github.com/achraf-bay/solveur-pl/issues) avec :
 - Description du problème
 - Étapes pour reproduire
 - Comportement attendu vs observé
@@ -244,15 +221,6 @@ Ouvrez une [issue](https://github.com/votre-username/solveur-pl/issues) avec :
 - [ ] Mode hors ligne (sans IA)
 - [ ] Support multilingue
 - [ ] Méthode du simplexe avec étapes détaillées
-
-## 📄 Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-##  Auteurs
-
-- **Votre Nom** - Développement principal
-- **Contributeurs** - Voir [CONTRIBUTORS.md](CONTRIBUTORS.md)
 
 ##  Remerciements
 
