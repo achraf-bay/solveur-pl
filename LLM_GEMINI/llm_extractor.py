@@ -19,7 +19,7 @@ class LLMExtractor:
         # CONFIG
         genai.configure(api_key=self.api_key)
 
-        # 👉 NOUVELLE LISTE DE MODÈLES 2025
+        # LISTE DE MODÈLES 
         model_names = [
             "gemini-2.0-flash",
             "gemini-2.0-flash-lite",
