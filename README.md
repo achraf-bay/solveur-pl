@@ -6,21 +6,21 @@ Application de bureau moderne pour résoudre des problèmes de programmation lin
 ![PySide6](https://img.shields.io/badge/PySide6-6.0+-green.svg)
 ![License](https://img.shields.io/badge/License-MIT-yellow.svg)
 
-## Table des matières
+##  Table des matières
 
-- [Caractéristiques](#caractéristiques)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Utilisation](#utilisation)
-- [Structure du projet](#structure-du-projet)
-- [Technologies](#technologies)
-- [Exemples](#exemples)
-- [Contributions](#contributions)
-- [Licence](#licence)
+- [Caractéristiques](##-caractéristiques)
+- [Installation](#-installation)
+- [Configuration](#-configuration)
+- [Utilisation](#-utilisation)
+- [Structure du projet](#-structure-du-projet)
+- [Technologies](#-technologies)
+- [Exemples](#-exemples)
+- [Contributions](#-contributions)
+- [Licence](#-licence)
 
-## Caractéristiques
+##  Caractéristiques
 
-### Deux modes d'entrée
+###  Deux modes d'entrée
 
 #### **Mode Standard**
 - Interface manuelle intuitive
@@ -28,7 +28,7 @@ Application de bureau moderne pour résoudre des problèmes de programmation lin
 - Gestion dynamique des contraintes
 - Ajout/suppression de contraintes en temps réel
 
-#### **Mode AI-TEXT**
+#### **Mode AI-TEXT** 
 - **Extraction automatique via Gemini AI**
 - Collez votre problème en texte libre
 - L'IA extrait automatiquement :
@@ -36,36 +36,25 @@ Application de bureau moderne pour résoudre des problèmes de programmation lin
   - Coefficients de la fonction objectif
   - Toutes les contraintes
 
-### Visualisation
+###  Visualisation
 
 - **Graphiques interactifs** : Zone faisable, contraintes, point optimal
 - **Affichage des résultats** : Solution détaillée avec valeurs de x₁, x₂ et Z
 - **Export PDF** : Rapport complet avec graphique
 
-### Interface moderne
+###  Interface moderne
 
 - Design élégant avec dégradés
 - Thème sombre optimisé
 - Animations et transitions fluides
 - Responsive et intuitive
 
-## Installation
+##  Installation
 
 ### Prérequis
 
 - Python 3.8 ou supérieur
 - pip (gestionnaire de paquets Python)
-
-### Installation des dépendances
-
-```bash
-# Cloner le repository
-git clone https://github.com/votre-username/solveur-pl.git
-cd solveur-pl
-
-# Installer les dépendances
-pip install -r requirements.txt
-```
 
 ### Dépendances principales
 
@@ -79,16 +68,16 @@ python-dotenv>=0.19.0
 fpdf>=1.7.2
 ```
 
-## Configuration
+## ⚙️ Configuration
 
 ### 1. Configurer l'API Gemini
 
 #### Option A : Via l'interface (Recommandé)
 
 1. Lancez l'application
-2. Cliquez sur le bouton **API KEY**
+2. Cliquez sur le bouton ** API KEY**
 3. Entrez votre clé API Gemini
-4. Le bouton devient vert quand configuré
+4. Le bouton devient vert quand configuré 
 
 #### Option B : Via fichier `.env`
 
@@ -105,9 +94,7 @@ GEMINI_API_KEY=votre_clé_api_ici
 3. Créez une nouvelle clé API
 4. Copiez la clé (format : `AIzaSy...`)
 
-> **Note** : Gratuit - 15 requêtes/minute, 1500 requêtes/jour
-
-## Utilisation
+##  Utilisation
 
 ### Lancer l'application
 
@@ -122,13 +109,13 @@ python main.py
 3. Configurez les contraintes :
    - `a·x₁ + b·x₂ ≤ c`
    - Ajoutez/supprimez des contraintes avec les boutons
-4. Cliquez sur **RÉSOUDRE**
+4. Cliquez sur ** RÉSOUDRE**
 5. Visualisez les résultats et le graphique
 6. **Exportez en PDF** si désiré
 
-### Mode AI-TEXT
+### Mode AI-TEXT 
 
-1. Cliquez sur **AI-TEXT**
+1. Cliquez sur ** AI-TEXT**
 2. Collez votre problème en texte libre :
 
 ```
@@ -140,19 +127,20 @@ de temps d'assemblage. Seules 200 heures de travail sont
 disponibles pendant la semaine à venir...
 ```
 
-3. Cliquez sur **EXTRAIRE AVEC GEMINI**
+3. Cliquez sur ** EXTRAIRE AVEC GEMINI**
 4. L'IA remplit automatiquement les champs
 5. Vérifiez et ajustez si nécessaire
-6. Cliquez sur **RÉSOUDRE**
+6. Cliquez sur ** RÉSOUDRE**
 
-## Structure du projet
+##  Structure du projet
 
 ```
 PROJET-1/
 ├── main.py                     # Point d'entrée de l'application
 ├── requirements.txt            # Dépendances Python
-├── .env                        # Configuration API (à créer)
 ├── README.md                   # Ce fichier
+├── pdf_export.py               # Export PDF
+├── test_models.py              # tester les models 
 │
 ├── core/                       # Logique métier
 │   ├── optimizer.py           # Algorithmes d'optimisation
@@ -165,11 +153,10 @@ PROJET-1/
 │   └── main_window.py         # Fenêtre principale
 │
 └── utils/                     # Utilitaires
-    ├── validators.py          # Validation des entrées
-    └── pdf_export.py          # Export PDF
+    └── validators.py          # Validation des entrées
 ```
 
-## Technologies
+##  Technologies
 
 ### Frontend
 - **PySide6** : Interface graphique Qt
@@ -185,7 +172,7 @@ PROJET-1/
 ### Export
 - **FPDF** : Génération de PDF
 
-## Exemples
+##  Exemples
 
 ### Exemple 1 : Problème de production
 
@@ -218,25 +205,15 @@ Pour B : 1h et 2kg. On dispose de 100h et 120kg.
 - 2x₁ + x₂ ≤ 100
 - 3x₁ + 2x₂ ≤ 120
 
-## Contributions
+##  Signaler un bug
 
-Les contributions sont les bienvenues ! 
-
-1. Forkez le projet
-2. Créez une branche (`git checkout -b feature/amelioration`)
-3. Committez vos changements (`git commit -m 'Ajout fonctionnalité'`)
-4. Poussez vers la branche (`git push origin feature/amelioration`)
-5. Ouvrez une Pull Request
-
-## Signaler un bug
-
-Ouvrez une [issue](https://github.com/votre-username/solveur-pl/issues) avec :
+Ouvrez une [issue](https://github.com/achraf-bay/solveur-pl/issues) avec :
 - Description du problème
 - Étapes pour reproduire
 - Comportement attendu vs observé
 - Captures d'écran si applicable
 
-## TODO / Roadmap
+##  TODO / Roadmap
 
 - [ ] Support de plus de 2 variables
 - [ ] Historique des problèmes résolus
@@ -245,31 +222,14 @@ Ouvrez une [issue](https://github.com/votre-username/solveur-pl/issues) avec :
 - [ ] Support multilingue
 - [ ] Méthode du simplexe avec étapes détaillées
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier [LICENSE](LICENSE) pour plus de détails.
-
-## Auteurs
-
-- **Votre Nom** - Développement principal
-- **Contributeurs** - Voir [CONTRIBUTORS.md](CONTRIBUTORS.md)
-
-## Remerciements
+##  Remerciements
 
 - Google Gemini pour l'API d'extraction de texte
 - Communauté Qt/PySide6
 - Bibliothèque SciPy pour les algorithmes d'optimisation
 
-## Contact
-
-- Email : votre.email@example.com
-- Twitter : [@votre_handle](https://twitter.com/votre_handle)
-- LinkedIn : [Votre Profil](https://linkedin.com/in/votre-profil)
+ **Si ce projet vous a aidé, n'oubliez pas de lui donner une étoile !**
 
 ---
 
-**Si ce projet vous a aidé, n'oubliez pas de lui donner une étoile !**
-
----
-
-**Fait avec Python**
+**Fait avec et Python**
